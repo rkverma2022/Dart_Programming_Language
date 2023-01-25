@@ -1,0 +1,17 @@
+void main() {
+  // if else statements
+  var salary = 2500;
+  
+  if (salary>20000 && salary<10000){
+    print("Your salary is $salary");
+  }
+  else{
+    if(salary<10000 || salary>2000)
+    {
+      print("Less salary");
+    }
+    else{
+      print("work hard");
+    }
+  }
+}
