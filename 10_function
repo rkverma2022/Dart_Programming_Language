@@ -1,0 +1,16 @@
+void main() {
+//function in Dart are Objects
+  f(10, 20);
+  print(g(10, 10));
+
+
+}
+
+void f(int a, int b) {
+  print("the multi of $a and $b = ${a * b}");
+}
+
+int g(int a, int b) {
+  return a * b;
+}
+
