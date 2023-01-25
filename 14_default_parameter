@@ -1,0 +1,12 @@
+void main() {
+  //default parameter
+
+  findVolume(10, c:2);
+  findVolume(10, c:2, b:3);   //sequence doesn't matter
+}
+
+
+void findVolume(int a, {var b = 20, var c})
+{
+  print(a*b*c);
+}
