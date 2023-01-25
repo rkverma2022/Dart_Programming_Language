@@ -1,0 +1,23 @@
+void main() {
+ 
+  // condition ? exp1 : exp2;
+  
+  int a = 10;
+  int b = 20;
+  
+  a>=b ? print("$a is >= $b"): print("$b is > $a");
+  
+  var lrg = a>=b ? a : b;     //return value will store in lrg
+  print(lrg);
+  
+  
+  // exp1 ?? exp2
+  
+  //--> if exp1 == null then evaluate exp2
+  // else evaluate exp1
+  var name;
+  
+  var Name =  name ?? "Guest";
+  
+  print(Name);
+}
