@@ -1,0 +1,28 @@
+void main()
+{
+  //Numbers: int
+  int score = 23;
+  var Score = 32; //another way
+  
+  //Numbers: double
+  double per = 98.8;
+  var Per = 98.87; //another way
+  
+  //String
+  String name = "Er. Rajkumar Verma";
+  var Name = "Er. Anushka Verma";
+  
+  //Boolean
+  bool isValid = true;
+  var Isvalid = false; 
+  
+  print(score);
+  print(Score);
+  print(per);
+  print(Per);
+  print(name);
+  print(Name);
+  print(isValid);
+  print(Isvalid);
+    
+}
