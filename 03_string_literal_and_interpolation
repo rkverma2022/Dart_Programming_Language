@@ -1,0 +1,35 @@
+void main()
+{
+  //Literal
+  var a = true;
+ 
+  
+  //string literal
+  String s1 = 'Single';
+  String s2 = 'Sin\'s';   //use escap character '\'
+  String s3 = "Signal's";
+  String s5 = 'This is going to be a very long string. '
+              ' This is just a smaple';
+  
+  //string interpolation
+  String name = "Kevin";
+  String message = "My name is $name"; //concatenation
+  print(message);
+  print("Your brother is $name");
+  
+  //integer to string
+  print(message.length);      //to find string length
+  
+  //without using iterpolation
+  print("The length of message is: " + message.length.toString());
+  
+  //with interpolation
+  print("The length of meassage is: ${message.length}");
+  
+  
+  //string interpolation
+  int l = 10;
+  int b = 20;
+  print("The sum of $l and $b is ${l + b}");
+  
+}
