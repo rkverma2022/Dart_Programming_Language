@@ -1,0 +1,18 @@
+void main() 
+{
+  // final keyword
+  final cityname = "Chowk Bazar";
+  final String country = "India";
+  
+  const pi = 3.14;
+  const g = 9.8;
+//   g = 90;
+  
+}
+
+class Cricle{
+  final color = 'Red';
+//   const PI = 3.14;   through an error
+  static const PI = 3.14;
+  
+}
