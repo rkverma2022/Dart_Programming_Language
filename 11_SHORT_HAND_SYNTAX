@@ -1,0 +1,12 @@
+void main() {
+//Expression in fun: SHORT HAND SYNTAX
+  f(10, 20);
+  print(g(10, 10));
+
+
+}
+
+void f(int a, int b) => print("the multi of $a and $b = ${a * b}");
+
+int g(int a, int b) => a*b;   //need not to use return keyword
+
