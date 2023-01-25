@@ -1,0 +1,38 @@
+
+
+void main() {
+  //Exception Handling
+//   try {
+//     int result = 12 ~/ 0;
+//     print(result);
+//   } on IntegerDivisionByZeroException {
+//     print("can't divide by zero");
+//   }
+
+  //catch   : if you don't sure what kind of exception will raise
+  try {
+    int result = 12 ~/ 0;
+    print(result);
+  } catch (e) {
+    print(e);
+  }
+
+  //StackTrace Object:s     catch(e, s)
+  try {
+    int result = 12 ~/ 0;
+    print(result);
+  } catch (e, s) {
+    print(e);
+    print("Stack Trace $s");
+  }
+
+  //4. finally Clause: always excuted
+  try {
+    int result = 12 ~/ 0;
+    print(result);
+  } catch (e) {
+    print(e);
+  } finally {
+    print("Good Morning");
+  }
+}
