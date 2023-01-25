@@ -1,0 +1,15 @@
+void main() {
+ 
+  // switch (condition){ case 1: exp; break}
+  String grade = 'A';
+  
+  switch(grade)   // parameter only cab be int , or String
+  {
+    case 'A': print("Your grade is: $grade");
+              break;
+    case 'B': print("Your grade is $grade");
+              break;
+    default:  print("Failed");
+              break;
+  }
+}
