@@ -1,0 +1,14 @@
+void main()
+{
+  //Numbers: int
+  int hexvalue_A = 0xA;
+  var hexvalue_B = 0xB;
+  print(hexvalue_A);
+  print(hexvalue_B);
+  
+  //Numbers: double
+  double exponent = 1.5e0;
+  print(exponent);
+  
+  
+}
