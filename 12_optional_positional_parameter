@@ -1,0 +1,21 @@
+void main() {
+  //Required and Optional parameter
+  f("UP", "Bihar");
+
+  nation("India", "Nepal");
+  
+  country("India");
+}
+
+
+//required parameter
+void f(String name1, String name2) => print("$name1 \t $name2\n");
+
+
+//optional positional parameter
+void nation(String name1, String name2, [var name3]){
+  print("$name1 \t $name2 \t $name3\n");
+}
+
+void country(String name1, [var name2, var name3]) => print("$name1 \t $name2 \t $name3\n");
+
