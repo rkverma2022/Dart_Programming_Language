@@ -1,0 +1,26 @@
+//OOPs
+void main() {
+  var student1 = Student(); //or var student1 = new Student();  //one object, 
+
+  student1.id = 2022;
+  student1.name = "JC Bose";
+  print("id : ${student1.id}\nname: ${student1.name}");
+
+  //calling method of class
+  student1.sleep();
+  student1.study();
+}
+
+//define states (properties) and behavior of a student
+class Student {
+  int id = 2021; //--> instance var   // or field var
+  String name = "DRDO"; //--> instance var
+
+  void study() {
+    print(this.id);
+  }
+
+  void sleep() {
+    print(this.name);
+  }
+}
