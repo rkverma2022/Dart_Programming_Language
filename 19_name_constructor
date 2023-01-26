@@ -1,0 +1,35 @@
+
+//3. Named Constructor  //--> can be more than one
+//4. Constant Constructor
+
+void main() {
+  //named constructor
+  var stu1 = Student.myconstructor1("John");
+  
+  stu1.sleep();
+  
+  //named cons. 2
+  var stu2 = Student.myconstructor2(300);
+  
+  stu2.sleep();
+  
+
+}
+
+//define states (properties) and behavior of a student
+class Student {
+
+  String name = ""; //--> instance var
+  int id = 0;
+  Student.myconstructor1(this.name){
+    print("This is name constructor1");
+  }
+  
+  Student.myconstructor2(this.id){
+    print("This is name constructor2");
+  }
+      
+  void sleep() {
+    print("${this.name} is sleeping");
+  }
+}
