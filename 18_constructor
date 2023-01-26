@@ -1,0 +1,45 @@
+//constructor
+//1. Default Constructor
+//2. Parameterized Constructor
+
+
+void main() {
+  
+  //1.default constructor
+//   var student1 = Student(); //or var student1 = new Student();  //one object, 
+
+//   student1.name = "JC Bose";
+//   print("name: ${student1.name}");
+
+//   //calling method of class
+//   student1.sleep();
+  
+  
+  //2. parameterized constructor
+  var student1 = Student("parameterized constructor"); //or var student1 = new Student();  //one object, 
+
+  student1.name = "JC Bose";
+  print("name: ${student1.name}");
+
+  //calling method of class
+  student1.sleep();
+  
+
+}
+
+//define states (properties) and behavior of a student
+class Student {
+
+  String name; //--> instance var
+  
+//   //1. Default constructor
+//   Student(){
+//     print("This is default cunstructor\n");
+//   }
+  
+  //2. parameterized constructor
+   Student(this.name);    
+  void sleep() {
+    print("${this.name} is sleeping");
+  }
+}
