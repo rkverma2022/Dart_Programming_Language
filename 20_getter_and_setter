@@ -1,0 +1,29 @@
+//Getter, Setters and Private Instance Variables
+
+//1. default getter and setter
+//2. custom getter and setter
+//3. private instance variables
+
+void main()
+{
+  //default getter and setter
+  var obj = object();
+  obj.name = "DartPad";   //calling default setter
+  print(obj.name);        //calling default getter
+  
+  obj.percentage = 488;     //calling custom setter to set value
+  
+  print(obj.percentage);
+  
+}
+
+class object{
+  
+  var name;     //instance variable
+  
+  double percent =0.0;
+  
+  void set percentage(double marks) => percent = (marks/500)*100;  //custom setter
+  
+  double get percentage => percent;     //custom getter
+}
