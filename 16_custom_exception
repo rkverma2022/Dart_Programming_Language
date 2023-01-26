@@ -1,0 +1,26 @@
+void main() {
+  //custom exception handling
+  try{
+    depositMoney(-200);
+  } catch (e) {
+    print(e);
+  } finally {
+    print("Thank You");
+  }
+  
+}
+
+class DepositeException implements Exception {
+  //method
+  String errorMessage() {
+    return "You can't enter amout less than 0";
+  }
+}
+
+//to verify the amount
+void depositMoney(int rupee) {
+  if (rupee < 0) {
+    throw new DepositeException();
+  }
+  print(rupee);
+}
