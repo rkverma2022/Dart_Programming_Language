@@ -1,0 +1,17 @@
+void main()
+{
+  print(circle.pi);     //consume memory only once
+  
+  print(circle.pi);   //consume memory only once
+  
+  circle.area();
+}
+
+class circle{
+  
+  static const double pi = 3.14;    //noone can change the value of pi
+  
+  static void area(){
+    print("Calculate area");
+  }
+}
