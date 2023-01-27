@@ -1,0 +1,33 @@
+/*
+ * Introduction to Lambdas and Higher-Order function
+ * Implementing Lambdas Expressions and Higher-Order Function
+ * Closures
+ */
+
+
+//Nameless function: Lambda/ anonymous function
+
+//lambda function
+
+void main()
+{
+  //1st way
+  Function sum = (int a, int b){
+                                print(a+b);
+                              };
+  
+  //2nd way
+  
+  var mulBy4 = (int c) => c*4;
+  
+  //calling lambda fun
+  sum(2, 3);
+  
+  
+  print(mulBy4(5));
+  
+}
+
+
+// //Normal function
+// void Sum(int a, int b)=>print(a+b);
