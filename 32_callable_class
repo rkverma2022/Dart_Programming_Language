@@ -1,0 +1,14 @@
+//callable class
+
+void main()
+{
+  var per = person();
+  per(21);
+}
+
+class person{
+  
+  call (int age){
+    print(age);
+  }
+}
