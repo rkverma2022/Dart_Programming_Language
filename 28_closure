@@ -1,0 +1,39 @@
+//closure
+/*
+ * Def 1: 
+ * A closure is a function that has access to the prarent scope, even after the scope has closed
+ */
+void main()
+{
+  String message = "Dart support flutter to develope best application";
+  
+  //closure
+  var myfun = (){
+    message = "Dart is high level language, made by google";
+    print(message);
+  };
+  
+  myfun();
+  
+  
+  /*
+   * Def 2: A closure is a function object that has access to variables 
+   * in its lexical scope
+   * even when the fun is used outside of its original scope
+   */
+  
+  Function talk = (){
+    String msg = "Hi";
+    
+    Function say =(){
+      msg = "hellow";
+      print(msg);
+    };
+    return say;
+  };
+  
+  var speak = talk();
+  speak();
+  
+  
+}
