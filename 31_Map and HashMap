@@ -1,0 +1,38 @@
+//map and hasmap
+/*
+ * 1. map-->
+ * key has to be unique
+ * value can be duplicate
+ */
+
+void main()
+{
+  Map<String, String> fruit = Map();
+  fruit["apple"] = "red";
+  fruit["banana"] = "yellow";
+  fruit["orange"] = "yellow";
+  
+  print(fruit.keys);
+  print(fruit.values);
+  
+  //update
+  fruit.update("apple", (value)=> "green");
+  fruit.remove("orange");
+  
+  for(var ele in fruit.keys){
+    print("$ele   =  ${fruit[ele]}");
+  }
+  
+  fruit.forEach((key, value) => print("key: $key and value: $value"));
+  
+ fruit.clear();
+  print(fruit.length);
+  
+  
+  //another way
+  Map<String, int> dialcode ={"India": 91, "USA": 1};
+  
+  print(dialcode);
+  
+  
+}
