@@ -1,0 +1,40 @@
+void main() {
+  
+  var tv = television();
+  
+  tv.vol_down();
+  tv.vol_up();
+  tv.someMethod();
+}
+
+class remote {
+  void vol_up() {
+    print("_______remote_vol+++_____");
+  }
+
+  void vol_down() {
+    print("_______remote_vol---_____");
+  }
+}
+
+class another{
+  void someMethod()
+  {
+    print("code");
+  }
+}
+
+class television implements remote, another{
+   void vol_up() {
+    print("_______tv_vol+++_____");
+  }
+
+  void vol_down() {
+    print("_______tv_vol---_____");
+  }
+  
+  void someMethod()
+  {
+    print("__another methode__");
+  }
+}
