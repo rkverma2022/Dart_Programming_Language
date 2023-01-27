@@ -1,0 +1,38 @@
+void main() {
+ var l = List.filled(3, 0);
+  print(l);
+  
+  var L = List.generate(3, (i) => i);
+  print(L[0]);
+  
+  L.forEach((ele) => print(ele));  //using lambda
+  
+  
+  print(L.length);
+  print(L.reversed);
+  L.add(28);
+  print(L);
+  
+  
+  
+  //growable list
+  var mylist = List.generate(0, (i)=>i);
+  
+  for(int i=0; i<10;i++){
+    mylist.add(i*2);
+  }
+  print(mylist);
+  
+  mylist.removeAt(3);
+  print(mylist);
+  
+  mylist.clear();
+  print(mylist.length);
+  
+  
+  //list
+  List<String> countries = ["INDIA", "USA", "UK"];
+
+  countries.add("Soviyat");
+  print(countries);
+}
