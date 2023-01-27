@@ -1,0 +1,24 @@
+
+
+void main() {
+  var dog1 = Dog();
+
+  var dog2 = Dog();
+}
+
+class Animal {
+  Animal() {
+    print("Animal class constructor");
+  }
+}
+
+class Dog extends Animal {
+  Dog() : super() {
+    print("Dog class constructor");
+  }
+
+  //or
+//   Dog(){
+//     print("Dog class constructor");
+//   }
+}
