@@ -1,0 +1,35 @@
+/*
+ * set and hashset
+ * 1. set
+ * unordered collection
+ * all elements are unique
+ */
+
+void main()
+{
+  
+  Set <int> myset = {2, 4, 5, 4};
+  
+  print(myset);
+  
+  Set <String> myset1 = Set.from(["USA", "INDIA", "UK"]);
+  print(myset1);
+  
+  Set <bool> myset2 = Set();
+  print(myset2);
+  myset2.add(true);
+  myset2.add(false);
+  print(myset2);
+  
+  for(var ele in myset1)
+  {
+    print(ele);
+  }
+  
+  //whether a ele is present 
+  print(myset1.contains("INDIA"));
+  print(myset1.isEmpty);
+  myset1.clear();
+  print(myset1.length);
+  
+}
