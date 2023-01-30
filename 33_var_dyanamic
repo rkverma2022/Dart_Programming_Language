@@ -1,0 +1,21 @@
+void main()
+{
+  var subject = "Math";
+  subject = "science";
+
+  var name;
+  name = "Rajkumar";
+  print(name);
+  name = 8393;
+
+  print(name);
+
+
+  dynamic Name;
+  Name  = 93.392;
+  print(Name);
+  Name = true;
+  print(Name);
+  Name="hwllo";
+  print(Name);
+}
