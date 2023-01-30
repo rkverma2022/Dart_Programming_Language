@@ -13,7 +13,7 @@ void main()
   var Name = "Er. Anushka Verma";
   
   //Boolean
-  bool isValid = true;
+  bool IsLoging = true;
   var Isvalid = false; 
   
   
@@ -23,7 +23,7 @@ void main()
   print(Per);
   print(name);
   print(Name);
-  print(isValid);
+  print(IsLogin);
   print(Isvalid);
   
   BigInt LongValue;
