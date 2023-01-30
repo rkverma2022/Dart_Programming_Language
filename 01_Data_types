@@ -16,6 +16,7 @@ void main()
   bool isValid = true;
   var Isvalid = false; 
   
+  
   print(score);
   print(Score);
   print(per);
@@ -24,5 +25,9 @@ void main()
   print(Name);
   print(isValid);
   print(Isvalid);
+  
+  BigInt LongValue;
+  LongValue = BigInt.parse('12457569522522145524555522212');
+  print(LongValue);
     
 }
