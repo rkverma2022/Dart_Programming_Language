@@ -1,0 +1,26 @@
+body: TextButton(
+        child: Text("Click Here"),
+        onPressed: (){
+          print("Text Button TApped");
+        },
+        onLongPress: (){
+          print("LONG PRESS");
+        }
+      ),
+      
+      
+body: ElevatedButton(
+        child: Text("Click Here"),
+        onPressed: (){
+          print("Text Button TApped");
+        },
+        onLongPress: (){
+          print("LONG PRESS");
+        }
+      ),
+      
+body: OutlinedButton(
+        child: Text("OutLineButton"),
+        onPressed: (){print("ButtonPressed");},
+        onLongPress: (){ print("LongPress");},
+      )
