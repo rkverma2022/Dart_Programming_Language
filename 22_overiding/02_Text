@@ -1,0 +1,10 @@
+body: Center(
+        child: Text('Hellow It is Text widget', style: TextStyle(
+          fontSize: 25,
+          color: Colors.white,
+          fontWeight: FontWeight.w100,
+          backgroundColor: Colors.blue,
+        ),),
+      )
+      // This trailing comma makes auto-formatting nicer for build methods.
+    );
